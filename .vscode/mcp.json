@@ -5,6 +5,12 @@
             "id": "github_token",
             "description": "GitHub Personal Access Token",
             "password": true
+        },
+        {
+            "type": "promptString",
+            "id": "figma-key",
+            "description": "Figma API Key",
+            "password": true
         }
     ],
     "servers": {
@@ -31,6 +37,23 @@
             "env": {
                 "MEMORY_FILE_PATH": "${workspaceFolder}/.vscode/memory.json"
             }
+        },
+        "Figma": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "figma-developer-mcp",
+                "--stdio"
+            ],
+            "env": {
+                "FIGMA_API_KEY": "${input:figma-key}"
+            }
+        },
+        "Playwright": {
+            "command": "npx",
+            "args": [
+                "@executeautomation/playwright-mcp-server"
+            ]
         }
     }
 }
