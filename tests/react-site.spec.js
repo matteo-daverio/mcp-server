@@ -5,7 +5,7 @@ test('homepage loads correctly', async ({ page }) => {
   await page.goto('http://localhost:3000/');
 
   // Verifica che il titolo della pagina contenga il nome dell'app
-  await expect(page).toHaveTitle(/React App/);
+  await expect(page).toHaveTitle(/Microsoft Story/);
 
   // Verifica che l'elemento principale dell'App sia presente
   await expect(page.locator('.App')).toBeVisible();
