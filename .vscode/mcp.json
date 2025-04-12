@@ -28,16 +28,6 @@
                 "GITHUB_PERSONAL_ACCESS_TOKEN": "${input:github_token}"
             }
         },
-        "Memory": {
-            "command": "npx",
-            "args": [
-                "-y",
-                "@modelcontextprotocol/server-memory"
-            ],
-            "env": {
-                "MEMORY_FILE_PATH": "${workspaceFolder}/.vscode/memory.json"
-            }
-        },
         "Figma": {
             "command": "npx",
             "args": [
