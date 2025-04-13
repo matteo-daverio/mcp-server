@@ -1,7 +1,7 @@
 # About the project
 
 Purpose: Show Microsoft success over time.
-Stack: React 18, TypeScript 5, Tailwind CSS 4
+Stack: React 18, TypeScript 5
 
 # Tools
 
